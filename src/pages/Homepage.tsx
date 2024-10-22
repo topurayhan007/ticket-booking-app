@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calendar, Filter, MapPin, Menu, Search } from "lucide-react";
+import { Calendar, Filter, MapPin, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,7 +17,7 @@ const Homepage = () => {
   const [priceRange, setPriceRange] = useState([0, 1000]);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       
     </div>
   );
