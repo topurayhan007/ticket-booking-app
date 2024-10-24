@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p className="text-sm">
-            &copy; 2023 TopuTavels. All rights reserved.
+            &copy; 2024 TopuTavels. All rights reserved.
           </p>
         </div>
       </div>
