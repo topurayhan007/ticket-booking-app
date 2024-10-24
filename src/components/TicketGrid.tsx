@@ -4,7 +4,6 @@ interface TicketGridProps {
   sectionHeading: string;
   gridArray: number[][];
   onSeatSelect: (id: string) => void;
-  selected: boolean;
 }
 
 const TicketGrid = ({
@@ -12,7 +11,6 @@ const TicketGrid = ({
   sectionHeading,
   gridArray,
   onSeatSelect,
-  selected,
 }: TicketGridProps) => {
   const rowLetters = [
     ..."abcdefghijklmnopqrstuvwxyz".slice(0, column).split(""),

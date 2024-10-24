@@ -3,6 +3,7 @@ import AvailableTicketsInfoSection from "@/components/AvailableTicketsInfoSectio
 import FilterSection from "@/components/FilterSection";
 import TicketGrid from "@/components/TicketGrid";
 import { useState } from "react";
+import SelectedSeatsSection from "@/components/SelectedSeatsSection";
 
 const Homepage = () => {
   const [fiveByFiveGrid, setFiveByFiveGrid] = useState([
@@ -79,22 +80,26 @@ const Homepage = () => {
               sectionHeading="VIP Section"
               gridArray={fiveByFiveGrid}
               onSeatSelect={onSeatSelect1}
-              selected={selected1}
             />
             <TicketGrid
               column={sixBySixGrid.length}
               sectionHeading="General Section"
               gridArray={sixBySixGrid}
               onSeatSelect={onSeatSelect2}
-              selected={selected2}
             />
             <TicketGrid
               column={eightByEightGrid.length}
               sectionHeading="Economy Section"
               gridArray={eightByEightGrid}
               onSeatSelect={onSeatSelect3}
-              selected={selected3}
             />
+
+            <SelectedSeatsSection
+              arr1={fiveByFiveGrid}
+              arr2={sixBySixGrid}
+              arr3={eightByEightGrid}
+            />
+
             <AvailableTicketsInfoSection />
           </div>
 
