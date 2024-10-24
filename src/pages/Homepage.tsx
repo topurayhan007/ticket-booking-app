@@ -75,21 +75,21 @@ const Homepage = () => {
           <div className="lg:col-span-3">
             <SearchSection />
             <TicketGrid
-              column={5}
+              column={fiveByFiveGrid.length}
               sectionHeading="VIP Section"
               gridArray={fiveByFiveGrid}
               onSeatSelect={onSeatSelect1}
               selected={selected1}
             />
             <TicketGrid
-              column={6}
+              column={sixBySixGrid.length}
               sectionHeading="General Section"
               gridArray={sixBySixGrid}
               onSeatSelect={onSeatSelect2}
               selected={selected2}
             />
             <TicketGrid
-              column={8}
+              column={eightByEightGrid.length}
               sectionHeading="Economy Section"
               gridArray={eightByEightGrid}
               onSeatSelect={onSeatSelect3}
